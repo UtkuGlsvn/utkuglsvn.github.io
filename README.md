@@ -1,2 +1,7 @@
 # MyWebSite
-Basic One Page Html&amp;Css website
+https://utkuglsvn.github.io/
+
+
+How to create website: 
+
+https://pages.github.com/
