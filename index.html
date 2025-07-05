@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base target="_blank">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>UtkuGlsvn</title>
+    <title>UtkuGlsvn - Software Developer</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="grid-2">
-        <div class="section-1">
-            <img class="circle-image" src="icon.png" alt="Circle Image">
-            <h2>UtkuGlsvn</h2>
-            <p>FoxyCode</p>
-            <a href="https://twitter.com/utkuglsvn"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/utkuglsvn/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/UtkuGlsvn"><i class="fab fa-github"></i></a>        
-            <a href="https://utkuglsvn.medium.com/"><i class="fab fa-medium"></i></a>
-        </div>
-        <div class="section-2">
-            <h2>About</h2>
-            <p>
-                <b>Heyyyy, Hello</br></br></b>My name is Utku. I co-founder FoxyCodeStudios. I am an Android developer and i am a software developer. I have my own projects  and I support different Android / software development companies.
-            </p>        
-            <h2>Projects</h2>
-            <a href="https://foxycodestudios.com/">FoxyCodeStudios</a>
-            <a href="https://iyiyasa.com/">İyiyaşa -> Android Developer</a>
-            <a href="https://astopia.com/">Astopia -> Android Developer</a>
-            <a href="https://mylifebox.com/">Lifebox -> Android developer</a>
-            <a href="https://www.benzinlitre.com/">Benzinlitre -> Mobile TeamLead</a>
-            <a href="">Freelance -> Software Developer</a>
-            <h2>Contact</h2>
-            <p>utkuglsvn@gmail.com</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Main Container -->
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
+        
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Left Column: Profile & Socials -->
+            <div class="md:col-span-1 bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center">
+                <!-- Profile Image -->
+                <img class="w-36 h-36 rounded-full object-cover shadow-md mb-4" 
+                     src="https://github.com/UtkuGlsvn/ReviewMetrix/blob/main/img/icon.png?raw=true" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/150x150/E2E8F0/4A5568?text=UG';"
+                     alt="UtkuGlsvn Profile Picture">
+                
+                <!-- Name and Title -->
+                <h1 class="text-3xl font-bold text-gray-900">UtkuGlsvn</h1>
+                <p class="text-lg text-indigo-600 font-medium mt-1">FoxyCode</p>
+
+                <!-- Social Media Links -->
+                <div class="flex space-x-5 mt-6">
+                    <a href="https://twitter.com/utkuglsvn" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/utkuglsvn/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-700 transition-colors duration-300">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/UtkuGlsvn" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://utkuglsvn.medium.com/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-black transition-colors duration-300">
+                        <i class="fab fa-medium fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: About, Projects, Contact -->
+            <div class="md:col-span-2 space-y-8">
+                
+                <!-- About Section -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-4">About Me</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        <b>Heyyyy, Hello!</b>
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-2">
+                        My name is Utku. I am the co-founder of FoxyCodeStudios, an Android and software developer. I develop my own projects and provide support to various companies in Android and software development.
+                    </p>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-4">Projects & Roles</h2>
+                    <ul class="space-y-4">
+                        <!-- Project Item -->
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <a href="https://foxycodestudios.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-indigo-600 hover:underline">FoxyCodeStudios</a>
+                                <p class="text-sm text-gray-600">Co-founder</p>
+                            </div>
+                        </li>
+                         <!-- Project Item -->
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <a href="https://iyiyasa.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-indigo-600 hover:underline">İyiyaşa</a>
+                                <p class="text-sm text-gray-600">Android Developer</p>
+                            </div>
+                        </li>
+                         <!-- Project Item -->
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <a href="https://astopia.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-indigo-600 hover:underline">Astopia</a>
+                                <p class="text-sm text-gray-600">TPM, Technical Team Lead, Android Developer</p>
+                            </div>
+                        </li>
+                         <!-- Project Item -->
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <a href="https://mylifebox.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-indigo-600 hover:underline">Lifebox</a>
+                                <p class="text-sm text-gray-600">Android Developer</p>
+                            </div>
+                        </li>
+                         <!-- Project Item -->
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <a href="https://www.benzinlitre.com/" target="_blank" rel="noopener noreferrer" class="font-semibold text-indigo-600 hover:underline">Benzinlitre</a>
+                                <!-- CORRECTION: Updated the role as requested -->
+                                <p class="text-sm text-gray-600">Mobile TeamLead, Cofounder</p>
+                            </div>
+                        </li>
+                         <!-- Project Item -->
+                        <li class="flex items-start">
+                            <i class="fas fa-rocket text-indigo-500 mt-1 mr-3"></i>
+                            <div>
+                                <a href="#" class="font-semibold text-indigo-600 hover:underline">Freelance</a>
+                                <p class="text-sm text-gray-600">Software Developer, Consultant</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-indigo-200 pb-2 mb-4">Contact</h2>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-indigo-500 mr-3"></i>
+                        <a href="mailto:utkuglsvn@gmail.com" class="text-gray-700 hover:text-indigo-600">utkuglsvn@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+
 </body>
 </html>
